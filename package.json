@@ -6,10 +6,11 @@
     "main": "./index.js",
     "repository": {
         "type": "git",
-        "location": "https://github.com/zhou090221liang/rpi-sensor",
+        "location": "https://github.com/zhou090221liang/rpi-sensor.git",
         "url": "https://github.com/zhou090221liang/rpi-sensor"
     },
     "keywords": [
+        "rpi-sensor",
         "pi",
         "rpi",
         "raspbian",
