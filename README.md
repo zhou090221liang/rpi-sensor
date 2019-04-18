@@ -12,3 +12,31 @@
     $ sudo make install
 #### 2、安装该模块
     $ npm i rpi-sensor
+
+### API
+#### 首先，需要声明对象
+	const sensor = require('rpi-sensor');
+#### DHT11/DHT22 温湿度传感器
+##### 创建一个DHT11或DHT22传感器
+
+	new sensor.DHT11(BCM_no);
+	new sensor.DHT22(BCM_no);
+
+参数代表传感器DATA串行接口所对应的BCM编号，而非Pin编号，示例：
+
+	const dht11 = new sensor.DHT11(4);
+
+##### 从传感器读取当前的温湿度数值
+
+	dht11.read();
+
+该方法无需参数，返回值为JSON
+humidity：int 当前湿度百分比
+temperature：int 当前温度（摄氏度°C）
+isValid：bool 传感器返回的校验值和温湿度值是否匹配
+errors：int 错误，目前返回0
+
+
+返回值示例：
+
+	{humidity: 32, temperature: 31, isValid: true, errors: 0 }

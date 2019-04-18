@@ -1,6 +1,6 @@
 {
     "name": "rpi-sensor",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "description": "树莓派传感器合集",
     "author": "zxy<zxy@zhouxiaoyue.cn>",
     "main": "./index.js",
@@ -18,5 +18,7 @@
         "gpio",
         "sensor"
     ],
-    "dependencies": {}
+    "dependencies": {
+        "node-dht-sensor":"0.0.34"
+    }
 }
