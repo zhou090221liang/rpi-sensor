@@ -16,6 +16,9 @@
 ### 已经实现的功能列表
     1、DHT11/DHT22温湿度传感器 >= v0.1.0
 
+### Node版本支持
+    >= 6.x
+
 ### API
 #### 首先，需要声明对象
 	const sensor = require('rpi-sensor');
