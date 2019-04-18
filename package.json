@@ -3,7 +3,19 @@
     "version": "0.0.1",
     "description": "树莓派传感器合集",
     "author": "zxy<zxy@zhouxiaoyue.cn>",
-    "private": false,
-    "dependencies": {
-    }
-  }
+    "main": "./index.js",
+    "repository": {
+        "type": "git",
+        "location": "https://github.com/zhou090221liang/rpi-sensor",
+        "url": "https://github.com/zhou090221liang/rpi-sensor"
+    },
+    "keywords": [
+        "pi",
+        "rpi",
+        "raspbian",
+        "raspberry",
+        "gpio",
+        "sensor"
+    ],
+    "dependencies": {}
+}
