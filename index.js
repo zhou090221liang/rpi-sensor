@@ -10,5 +10,6 @@ module.exports = {
     /** 
      * 触摸按键传感器
     */
-    TOUCH_KEY: require('./lib/touchkeys')
+    TOUCH_KEY: require('./lib/touchkeys').TOUCH_KEY,
+    TOUCH_KEY_TYPE: require('./lib/touchkeys').TOUCH_KEY_TYPE
 };

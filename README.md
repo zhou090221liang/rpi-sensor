@@ -80,7 +80,10 @@
 
 ###### 示例：
 
-	const TOUCH_KEY = new sensor.TOUCH_KEY(12);
+	const touchkey = new sensor.TOUCH_KEY(12, {
+        TYPE: sensor.TOUCH_KEY_TYPE.UNLOCK_HIGHT,
+        LONG_TOUCH_TIME: 300
+    });
 
 ##### 监听按钮按下、松开状态
 
