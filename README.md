@@ -109,7 +109,7 @@
 #### 触摸按键2-目前测试通过的是TTP223,稳定性一般,其余设备请自己测试
 ##### 创建一个触摸按键传感器
 
-	new sensor.TOUCH_KEY(no [,setting]);
+	new sensor.TOUCH_KEY2(no [,setting]);
 
 ###### 参数setting为一个JSON格式的配置项
 
