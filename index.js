@@ -12,5 +12,9 @@ module.exports = {
     */
     TOUCH_KEY: require('./lib/touchkeys').TOUCH_KEY,
     TOUCH_KEY_TYPE: require('./lib/touchkeys').TOUCH_KEY_TYPE,
-    TOUCH_KEY2: require('./lib/touchkeys').TOUCH_KEY2
+    TOUCH_KEY2: require('./lib/touchkeys').TOUCH_KEY2,
+    /** 
+     * SSD1306
+    */
+    SSD1306: require('./lib/ssd1306')
 };

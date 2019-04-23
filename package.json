@@ -1,6 +1,6 @@
 {
     "name": "rpi-sensor",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "树莓派传感器合集",
     "author": "zxy<zxy@zhouxiaoyue.cn>",
     "main": "./index.js",
@@ -20,6 +20,11 @@
     ],
     "dependencies": {
         "node-dht-sensor": "0.0.34",
-        "pigpio": "1.2.2"
+        "pigpio": "1.2.2",
+        "i2c-bus": "4.0.9",
+        "oled-font-5x7": "1.0.3",
+        "png-to-lcd": "1.0.3",
+        "pngparse": "2.0.1",
+        "oled-i2c-bus": "1.0.11"
     }
 }
