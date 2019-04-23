@@ -24,13 +24,19 @@
     $ npm i rpi-sensor
 
 ### 已经实现的功能列表
-    1、DHT11/DHT22温湿度传感器 >= v0.1.0 node = 8.x
+    1、DHT11/DHT22温湿度传感器 >= v0.1.0 node=8.x
         可以检测当前温度与湿度
-    2、触摸按键模块传感器 >= v0.2.0
+    2、触摸按键模块传感器 >= v0.2.0 node>=6.x
         可以实时监控触摸按钮的按下与松开，并可以实现按钮的长按，短按
-    3、触摸按键模块传感器2 >= v0.3.0
+    3、触摸按键模块传感器2 >= v0.3.0 node>=6.x
         可以实时监控触摸按钮的长按，短按、双击
-    4、SSD1306显示屏 >= v0.4.0 node = 6.x
+    4、SSD1306显示屏 >= v0.4.0 node=6.x
+
+###### 问题处理
+    1、Error: Could not locate the bindings file. Tried
+    请在包根目录中运行 npm rebuild命令
+    2、Error: Module version mismatch. Expected 48, got 57.
+    代表Node.js版本不支持
 
 ### API
 #### 首先，需要声明对象
