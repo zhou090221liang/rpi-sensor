@@ -14,16 +14,24 @@ Date.prototype.Format = function (fmt) { //author: meizz
     return fmt;
 }
 
+const weekName1 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const weekName2 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
 const sensor = require('../index');
 const ssd1306 = new sensor.SSD1306(1, 0x3C, 128, 64);
 ssd1306.oled.turnOnDisplay();
 setInterval(() => {
     ssd1306.oled.clearDisplay();
-    const date = new Date().Format('yyyy-MM-dd');
-    const time = new Date().Format('hh:mm:ss');
-    console.log("显示:", date,time);
-    ssd1306.oled.setCursor(1, 1);
-    ssd1306.oled.writeString(ssd1306.font, 2, date, 1, true);
-    ssd1306.oled.setCursor(1, 16);
-    ssd1306.oled.writeString(ssd1306.font, 2, time, 1, true);
+    const now = new Date();
+    const date = now.Format('yyyy-MM-dd');
+    const time = now.Format('hh:mm:ss');
+    const day = now.getDay();
+    const week = weekName1[day] + "(" + weekName2[day] + ")";
+    console.log("显示:", date, time);
+    ssd1306.oled.setCursor(0, 0);
+    ssd1306.oled.writeString(ssd1306.font, 2, date);
+    ssd1306.oled.setCursor(0, 16);
+    ssd1306.oled.writeString(ssd1306.font, 2, time);
+    ssd1306.oled.setCursor(0, 32);
+    ssd1306.oled.writeString(ssd1306.font, 2, week);
 }, 1000);
