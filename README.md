@@ -231,3 +231,5 @@ ssd1306.oled.writeChinese(text)
 | 参数名称 | 参数类型 | 参数说明     |
 | -------- | -------- | ------------ |
 | text     | string   | 需要输出文字 |
+
+##### 更多API，请参考I2C标准 https://www.npmjs.com/package/oled-i2c-bus
