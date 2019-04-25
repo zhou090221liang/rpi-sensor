@@ -328,3 +328,17 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+.vscode
+
+rpi-sensor-*.tgz
+
+.DS_Store
+
+Resource/.DS_Store
+
+examples/.DS_Store
+
+lib/.DS_Store
+
+node_modules/.DS_Store
