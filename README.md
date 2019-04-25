@@ -232,4 +232,13 @@ ssd1306.oled.writeChinese(text)
 | -------- | -------- | ------------ |
 | text     | string   | 需要输出文字 |
 
+##### 在屏幕上显示任意字符并自动换行滚动显示
+```javascript
+ssd1306.oled.writeText(text [,scrollInterval])
+```
+| 参数名称       | 参数类型 | 参数说明               |
+| -------------- | -------- | ---------------------- |
+| text           | string   | 需要输出字符           |
+| scrollInterval | number   | 滚动间隔，默认1500毫秒 |
+
 ##### 更多API，请参考I2C标准 https://www.npmjs.com/package/oled-i2c-bus
